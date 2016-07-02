@@ -6,6 +6,10 @@ import SearchBar from './components/search_bar';
 
 const API_KEY = 'AIzaSyCNTm0LChsXyJvBYoUCGzgei-FE9DuraP0';
 
+YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
+	console.log(data);
+});
+
 // Downwards data flow.  The most parent should be responsible for fetching it
 // index is the most parent.  The components are children of index.js App
 
